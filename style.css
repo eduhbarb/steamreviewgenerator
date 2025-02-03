@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, #111923, #222F41);
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top:-2.3rem;
+    margin-bottom: 2rem;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.review-table {
+    width: 30rem;
+    border-collapse: collapse;
+    color: #ACB2B8;
+    
+    box-shadow: 0 4px 3rem rgba(0, 0, 0, 0.3);
+}
+
+.review-table th,
+.review-table td {
+    padding: 0.2rem;
+    text-align: left;
+    border: 1px solid #4D4D4D;
+}
+
+
+.categoria-titulo {
+    font-weight: bold;
+}
+
+.nota-selector {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.star-rating {
+    display: flex;
+    cursor: pointer;
+}
+
+.star {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0);
+    /* Cor de preenchimento para a estrela "vazia" */
+    -webkit-text-stroke: 1px #ACB2B8;
+    /* Contorno preto */
+    cursor: pointer;
+    transition: color 0.2s;
+
+}
+
+.star.filled {
+    color: #ACB2B8;
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.generate-button {
+    background-color: #53bb56;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 12rem;
+    margin-top: 20px;
+}
+
+.generate-button:hover {
+    background-color: #45a049;
+}
+
+textarea {
+    width:30rem;
+    height: 150px;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #ACB2B8;
+    background-color: #00000000;
+}
+
+.duration-rating {
+    display: flex;
+}
+
+.duration-rating .duration {
+    font-size: 21px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.textarea-container {
+    position: relative;
+    width:30rem;
+  }
+  
+  #resultado {
+    width: 100%;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  #copy-button {
+    position: relative;
+    bottom: 2.5rem;
+    left: 0.5rem;
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  
+  #copy-button:hover {
+    opacity: 1;
+  }
+  
+
+  .info, a{
+    color: white; 
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Template de Review</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Steam Review</h1>
+        <h2>Generator</h2>
+        <table class="review-table">
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Nota</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="categoria-titulo">🏆 Classificação Geral</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="classificacao-geral" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">📖 História</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="historia" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">🎮 Jogabilidade</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="jogabilidade" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">🎨 Gráficos</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="grafico" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">🎵 Design de Som</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="som" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">🔁 Valor de Rejogabilidade</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="rejogabilidade" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">😬 Dificuldade</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="dificuldade" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">🪲 Livre de Bugs?</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="bugs" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">🖥️ Requisitos para PC</td>
+                    <td class="nota-selector">
+                        <div class="star-rating" id="requisitos-pc" data-selected="0">
+                            <span class="star" data-value="1">★</span>
+                            <span class="star" data-value="2">★</span>
+                            <span class="star" data-value="3" class="filled">★</span>
+                            <span class="star" data-value="4">★</span>
+                            <span class="star" data-value="5">★</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="categoria-titulo">📈 Duração do Jogo</td>
+                    <td class="nota-selector">
+                        <div class="duration-rating" id="duracao" data-selected="0">
+                            <span class="duration" data-value="1">▰</span>
+                            <span class="duration" data-value="2">▰</span>
+                            <span class="duration" data-value="3">▱</span>
+                            <span class="duration" data-value="4">▱</span>
+                            <span class="duration" data-value="5">▱</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button class="generate-button" onclick="gerarReview()">Gerar Review</button>
+
+        <div class="textarea-container">
+            <textarea id="resultado" readonly></textarea>
+            <button id="copy-button" onclick="copiarTexto()">Copiar</button>
+        </div>
+
+        <div class="info"><span style=>Criador por <a href="http://discordapp.com/users/255372886733357066">Oneiros</a></span></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
