@@ -58,7 +58,7 @@ document.querySelectorAll('.duration-rating').forEach(rating => {
         if (!event.target.classList.contains('duration')) return;
         const spans = Array.from(rating.children);
         const clickedValue = parseInt(event.target.dataset.value);
-        rating.dataset.selected = clickedValue; 
+        rating.dataset.selected = clickedValue;
 
         spans.forEach((span, index) => {
             span.textContent = index < clickedValue ? '▰' : '▱';
@@ -99,7 +99,7 @@ function gerarReview() {
         "dificuldade": "😬 Dificuldade",
         "bugs": "🪲 Livre de Bugs?",
         "requisitos-pc": "🖥️ Requisitos para PC",
-        "duracao": "📈 Duração do Jogo"
+        "duracao": "⏳ Duração do Jogo"
     };
 
     let review = "[table equalcells=1]\n";
@@ -149,5 +149,5 @@ function copiarTexto() {
     textarea.select();
     textarea.setSelectionRange(0, 99999); // Para dispositivos móveis
     navigator.clipboard.writeText(textarea.value)
-  }
-  
+}
+
